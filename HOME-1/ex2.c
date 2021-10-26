@@ -3,20 +3,23 @@
 
 int main(void) {
     int matrix[DIM][DIM];
-    int transp[DIM][DIM];
-    int i,j;
+    int i,j, tmp;
 
     for(i=0; i<DIM; i++)
         for(j=0; j<DIM; j++)
             scanf("%d", &matrix[i][j]);
 
-    for(j=0; j<DIM; j++) 
-        for(i=0; i<DIM; i++)
-            transp[i][j] = matrix[j][i];
+    for(i=0; i<DIM-1; i++) {
+      for(j=i+1; j<DIM; j++) {
+        tmp = matrix[i][j];
+        matrix[i][j] = matrix[j][i];
+        matrix[j][i] = tmp;
+      }
+    }
 
     for(i=0; i<DIM; i++) {
         for(j=0; j<DIM; j++)
-            printf("%5d", transp[i][j]);
+            printf("%5d", matrix[i][j]);
         printf("\n");
     }
 

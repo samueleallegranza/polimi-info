@@ -1,15 +1,14 @@
 #include <stdio.h>
 #define MAX 50
 
-typedef struct _operator {
+typedef struct operator_s {
     float energy_price;
     float gas_price;
     char name[MAX];
-} operator;
-
+} operator_t;
 
 int main(void) {
-    operator op1, op2;
+    operator_t op1, op2;
     float energy_usage, gas_usage;
     float energy_total1, energy_total2;
     float gas_total1, gas_total2;

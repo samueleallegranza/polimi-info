@@ -1,22 +1,27 @@
 #include <stdio.h>
 #define DIM 50
+#define DIM_NOTCOMP (DIM/2 * 9)
 #define MULTIPLIER 9
 
 int main(void) {
-    char str[DIM+1];
+    char comp[DIM+1];
+    char str[DIM_NOTCOMP+1];
     char ch; int mult;
-    int i,j;
+    int i, j, s;
 
-    scanf("%s", str);
+    scanf("%s", comp);
 
-    for(i=0; str[i]!='\0'; i+=2) {
-        ch = str[i];
-        mult = str[i+1] - '0';
+    for(i=0, s=0; comp[i]!='\0'; i+=2) {
+        ch = comp[i];
+        mult = comp[i+1] - '0';
         for(j=0; j<mult; j++) {
-            printf("%c", ch);
+            str[s] = ch;
+            s++;
         }
     }
-    printf("\n");
+    str[s] = '\0';
+
+    printf("%s\n", str);
 
     return 0;
 }

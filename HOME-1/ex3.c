@@ -1,10 +1,11 @@
 #include <stdio.h>
 #define DIM 50
+#define DIM_COMP (DIM*2)
 #define MULTIPLIER 9
 
 int main(void) {
     char str[DIM+1];
-    char comp[(DIM*2)+1];
+    char comp[DIM_COMP+1];
     int multiplier, i, j;
     char stacking;
 
@@ -12,16 +13,22 @@ int main(void) {
 
     stacking=str[0];
     multiplier=1;
-    for(i=1; str[i]!='\0'; i++) {
+    for(i=1, j=0; str[i]!='\0'; i++) {
         if((multiplier == MULTIPLIER) || (str[i] != stacking)) {
-            printf("%c%d", stacking, multiplier);
+            comp[j] = stacking;
+            comp[j+1] = '0' + multiplier;
+            j+=2;
             stacking = str[i];
             multiplier = 1;
         } else {
             multiplier++;
         }
     }
-    printf("%c%d\n", stacking, multiplier);
+    comp[j] = stacking;
+    comp[j+1] = multiplier;
+    comp[j+2] = '\0';
+
+    printf("%s\n", comp);
 
     return 0;
 }
