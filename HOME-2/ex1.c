@@ -14,12 +14,13 @@ int nesting(char str[]) {
     max = 0;
     curr = 0;
     for(i=0; str[i] != '\0'; i++) {
-        if(str[i] == OP_BR)
+        if(str[i] == OP_BR) {
             curr++;
+            if(curr > max)
+                max = curr;
+        }
         else if(str[i] == CL_BR)
             curr--;
-        if(curr > max)
-            max = curr;
     }
     return max;
 }
