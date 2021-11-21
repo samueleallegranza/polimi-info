@@ -1,0 +1,4 @@
+Here there's a more detailed explaination:
+ESE-N 	Contains exercises solved during exercitation lessons. Every exercise's problem is written at the beginning of every file
+LAB-N 	Contains exercises solved during laboratory lessons. Every exercise's problem is written in a specific pdf contained in each folder
+HOME-N 	Contains exercises assigned as homework. Every exercise's problem is written in a specific pdf contained in each folder

@@ -1,0 +1,7 @@
+This is a collection of solved exercises assigned during the course Foundamentals of computer science (Fondamenti di informatica) at the Polytechnic University of Milan.
+I attended the course during the 1st semester of the academic year 2021 - 2022.
+The exercises are divided into multiple folders with identifying names. Every folder contains exercises solved during a single lesson.
+Here there's a more detailed explaination:
+ESE-N 	Contains exercises solved during exercitation lessons. Every exercise's problem is written at the beginning of every file
+LAB-N 	Contains exercises solved during laboratory lessons. Every exercise's problem is written in a specific pdf contained in each folder
+HOME-N 	Contains exercises assigned as homework. Every exercise's problem is written in a specific pdf contained in each folder

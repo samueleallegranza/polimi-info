@@ -1,0 +1,3 @@
+This is a collection of solved exercises assigned during the course Foundamentals of computer science (Fondamenti di informatica) at the Polytechnic University of Milan.
+I attended the course during the 1st semester of the academic year 2021 - 2022.
+The exercises are divided into multiple folders with identifying names. Every folder contains exercises solved during a single lesson.
