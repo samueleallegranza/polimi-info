@@ -1,0 +1,13 @@
+Testo per collaudare il programma. Devo vedere
+quanto e' lunga la frase, e
+quante frasi ci sono.
+Inoltre conto quante righe ci sono.
+E visualizzo.
+Finito.
+listi_t * elem_rev(listi_t * h, int target) {
+    int len;
+    listi_t * p;
+    int idx;
+
+    len = list_len()
+}
